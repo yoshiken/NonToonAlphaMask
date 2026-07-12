@@ -85,8 +85,8 @@ lilToon 由来部分のライセンスは [`Third Party Notices.md`](jp.yoshiken
 
 1. `jp.yoshiken.nontoon-alphamask/package.json` の `version`（と `url`）を更新
 2. commit & push
-3. 同じバージョン文字列で tag を作成して push（以下は `1.0.1` の例）  
-   `git tag 1.0.1 && git push origin 1.0.1`
+3. 同じバージョン文字列で tag を作成して push（以下は `0.0.1` の例）  
+   `git tag 0.0.1 && git push origin 0.0.1`
 4. GitHub Actions が Release と zip を作成
 5. [`docs/vpm.json`](docs/vpm.json) にバージョンを追記
 6. `docs/vpm.json` を commit & push し、VPM リポジトリへ反映
