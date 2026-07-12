@@ -1,0 +1,33 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve version from tag
+        id: ver
+        run: echo "version=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+
+      - name: Create package zip
+        working-directory: jp.yoshiken.nontoon-alphamask
+        run: |
+          zip -r "${{ github.workspace }}/jp.yoshiken.nontoon-alphamask-${{ steps.ver.outputs.version }}.zip" .
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.ver.outputs.version }}
+          name: ${{ steps.ver.outputs.version }}
+          files: jp.yoshiken.nontoon-alphamask-${{ steps.ver.outputs.version }}.zip
+          generate_release_notes: true

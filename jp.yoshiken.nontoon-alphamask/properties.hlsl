@@ -1,0 +1,5 @@
+SC_uint(_AlphaMaskMode, 0, [SCEnum(None, 0, Replace, 1, Multiply, 2, Add, 3, Subtract, 4)], "Alpha Mask Mode", "")
+SC_Texture2D(_AlphaMask, "white", [], "Alpha Mask", "")
+SC_ScaleOffset(_AlphaMask)
+SC_float(_AlphaMaskScale, 1, [], "Scale", "")
+SC_float(_AlphaMaskValue, 0, [], "Offset", "")
