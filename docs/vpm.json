@@ -6,6 +6,23 @@
   "packages": {
     "jp.yoshiken.nontoon-alphamask": {
       "versions": {
+        "0.0.2": {
+          "name": "jp.yoshiken.nontoon-alphamask",
+          "displayName": "NonToon Alpha Mask",
+          "description": "Adds alpha mask support to NonToon as a Shader Core module.",
+          "version": "0.0.2",
+          "unity": "2022.3",
+          "license": "Zlib",
+          "author": {
+            "name": "yoshiken",
+            "url": "https://github.com/yoshiken/NonToonAlphaMask"
+          },
+          "type": "tool",
+          "vpmDependencies": {
+            "jp.lilxyzw.shadercore": ">=0.1.2"
+          },
+          "url": "https://github.com/yoshiken/NonToonAlphaMask/releases/download/0.0.2/jp.yoshiken.nontoon-alphamask-0.0.2.zip"
+        },
         "0.0.1": {
           "name": "jp.yoshiken.nontoon-alphamask",
           "displayName": "NonToon Alpha Mask",
