@@ -11,6 +11,18 @@ msgstr "アルファマスク"
 msgid "Alpha Mask Mode"
 msgstr "モード"
 
+msgid "Alpha Mask 2nd"
+msgstr "アルファマスク2nd"
+
+msgid "Alpha Mask 2nd Mode"
+msgstr "モード (2nd)"
+
+msgid "Alpha Mask 3rd"
+msgstr "アルファマスク3rd"
+
+msgid "Alpha Mask 3rd Mode"
+msgstr "モード (3rd)"
+
 msgid "Scale"
 msgstr "スケール"
 

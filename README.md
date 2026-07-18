@@ -50,6 +50,7 @@ Packages/jp.yoshiken.nontoon-alphamask/package.json
 | モード | 0=None / 1=置き換え / 2=乗算 / 3=加算 / 4=減算（デフォルト: None） |
 | スケール | マスク強度 |
 | オフセット | マスクオフセット |
+| Alpha Mask 2nd / 3rd | 追加マスク。項目は 1st と同じ（テクスチャ / モード / スケール / オフセット） |
 
 ```text
 saturate(mask.r * Scale + Offset)
@@ -68,6 +69,8 @@ saturate(mask.r * Scale + Offset)
 | `_AlphaMask_ST` | Tiling / Offset | メイン UV に対する変換 |
 
 計算式とモード番号は lilToon と同じですが、マテリアル内の実際のプロパティ名には Shader Core により `_jp_yoshiken_nontoon_alphamask_` という接頭辞が付きます。既存の lilToon マテリアルから値が自動移行されるわけではないため、NonToon の Inspector で設定し直してください。
+
+なお、アルファマスク 2nd / 3rd（`_AlphaMask2nd*` / `_AlphaMask3rd*`）は lilToon 本体には存在しない本モジュール独自の拡張です。
 
 ## 注意
 
